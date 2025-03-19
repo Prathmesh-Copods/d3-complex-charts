@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Tabs from './components/Tabs/Tabs'
 import Treemap from './components/charts/Treemap/Treemap'
+import PackedCircles from './components/charts/PackedCircles/PackedCircles'
 import './App.scss'
 
 // Tab definitions including component to render and label
@@ -14,7 +15,7 @@ function App() {
   // Define available tabs
   const tabs: Tab[] = [
     { id: 'treemap', label: 'Treemap', component: <Treemap /> },
-    { id: 'packed-circles', label: 'Packed Circles', component: <div>Packed Circles (Coming soon)</div> },
+    { id: 'packed-circles', label: 'Packed Circles', component: <PackedCircles /> },
     { id: 'network', label: 'Network Graph', component: <div>Network Graph (Coming soon)</div> },
     { id: 'geo', label: 'Geographic Map', component: <div>Geographic Map (Coming soon)</div> },
   ];

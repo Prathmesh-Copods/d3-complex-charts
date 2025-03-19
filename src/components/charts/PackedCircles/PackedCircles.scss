@@ -1,0 +1,77 @@
+.packed-circles-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      max-width: 600px;
+      color: #ccc;
+    }
+    
+    .visualization {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+      
+      svg {
+        display: block;
+        margin: 0 auto;
+        
+        circle {
+          cursor: pointer;
+          transition: opacity 0.2s, stroke-width 0.2s, fill-opacity 0.2s;
+          
+          &:hover {
+            stroke-width: 2px;
+          }
+        }
+        
+        text {
+          pointer-events: none;
+          user-select: none;
+          text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+        }
+      }
+      
+      .tooltip {
+        position: absolute;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white;
+        padding: 12px;
+        border-radius: 4px;
+        pointer-events: none;
+        z-index: 10;
+        font-size: 14px;
+        max-width: 280px;
+        transition: opacity 0.2s;
+        transform: translate(0, 0);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        border: 1px solid #666;
+        
+        strong {
+          color: #fff;
+          font-size: 15px;
+        }
+      }
+    }
+    
+    .loading, .error {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+      width: 100%;
+      font-size: 1.2rem;
+    }
+    
+    .error {
+      color: #ff6b6b;
+    }
+  }
