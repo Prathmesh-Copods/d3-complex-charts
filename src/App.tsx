@@ -16,8 +16,8 @@ function App() {
   const tabs: Tab[] = [
     { id: 'treemap', label: 'Treemap', component: <Treemap /> },
     { id: 'packed-circles', label: 'Packed Circles', component: <PackedCircles /> },
-    { id: 'network', label: 'Network Graph', component: <div>Network Graph (Coming soon)</div> },
-    { id: 'geo', label: 'Geographic Map', component: <div>Geographic Map (Coming soon)</div> },
+    { id: 'network', label: 'Network Graph', component: <div>Network Graph</div> },
+    { id: 'geo', label: 'Geographic Map', component: <div>Geographic Map</div> },
   ];
 
   // Track the active tab
