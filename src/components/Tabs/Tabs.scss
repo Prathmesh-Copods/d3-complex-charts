@@ -1,0 +1,32 @@
+.tabs-container {
+    width: 100%;
+    
+    .tabs {
+      display: flex;
+      gap: 0.25rem;
+      border-bottom: 1px solid #444;
+      
+      .tab {
+        padding: 0.75rem 1.5rem;
+        background: none;
+        border: none;
+        border-radius: 8px 8px 0 0;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s, color 0.2s;
+        
+        &:hover {
+          background-color: #333;
+        }
+        
+        &.active {
+          background-color: #1a1a1a;
+          border: 1px solid #444;
+          border-bottom: 1px solid #1a1a1a;
+          margin-bottom: -1px;
+          font-weight: 600;
+        }
+      }
+    }
+  }

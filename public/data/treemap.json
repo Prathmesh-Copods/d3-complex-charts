@@ -1,0 +1,55 @@
+{
+    "name": "Categories",
+    "children": [
+      {
+        "name": "Technology",
+        "children": [
+          {
+            "name": "Hardware",
+            "children": [
+              { "name": "Computers", "value": 1200 },
+              { "name": "Phones", "value": 900 },
+              { "name": "Tablets", "value": 500 },
+              { "name": "Accessories", "value": 300 }
+            ]
+          },
+          {
+            "name": "Software",
+            "children": [
+              { "name": "Operating Systems", "value": 800 },
+              { "name": "Applications", "value": 1500 },
+              { "name": "Games", "value": 700 },
+              { "name": "Development Tools", "value": 400 }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Finance",
+        "children": [
+          { "name": "Banking", "value": 1800 },
+          { "name": "Insurance", "value": 1200 },
+          { "name": "Investment", "value": 1600 },
+          { "name": "Real Estate", "value": 900 }
+        ]
+      },
+      {
+        "name": "Healthcare",
+        "children": [
+          { "name": "Hospitals", "value": 2000 },
+          { "name": "Pharmaceuticals", "value": 1500 },
+          { "name": "Medical Devices", "value": 800 },
+          { "name": "Telemedicine", "value": 600 }
+        ]
+      },
+      {
+        "name": "Retail",
+        "children": [
+          { "name": "Clothing", "value": 1200 },
+          { "name": "Electronics", "value": 1400 },
+          { "name": "Grocery", "value": 1800 },
+          { "name": "Home Goods", "value": 900 }
+        ]
+      }
+    ]
+  }
