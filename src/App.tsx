@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Tabs from './components/Tabs/Tabs'
 import Treemap from './components/charts/Treemap/Treemap'
 import PackedCircles from './components/charts/PackedCircles/PackedCircles'
+import NetworkGraph from './components/charts/NetworkGraph/NetworkGraph'
 import './App.scss'
 
 // Tab definitions including component to render and label
@@ -16,7 +17,7 @@ function App() {
   const tabs: Tab[] = [
     { id: 'treemap', label: 'Treemap', component: <Treemap /> },
     { id: 'packed-circles', label: 'Packed Circles', component: <PackedCircles /> },
-    { id: 'network', label: 'Network Graph', component: <div>Network Graph</div> },
+    { id: 'network', label: 'Network Graph', component: <NetworkGraph /> },
     { id: 'geo', label: 'Geographic Map', component: <div>Geographic Map</div> },
   ];
 

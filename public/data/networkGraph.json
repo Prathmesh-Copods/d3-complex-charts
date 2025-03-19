@@ -1,0 +1,239 @@
+{
+    "nodes": [
+        {
+            "id": "Frontend",
+            "group": 1
+        },
+        {
+            "id": "React",
+            "group": 1
+        },
+        {
+            "id": "Angular",
+            "group": 1
+        },
+        {
+            "id": "Vue",
+            "group": 1
+        },
+        {
+            "id": "HTML",
+            "group": 1
+        },
+        {
+            "id": "CSS",
+            "group": 1
+        },
+        {
+            "id": "JavaScript",
+            "group": 1
+        },
+        {
+            "id": "Backend",
+            "group": 2
+        },
+        {
+            "id": "Node.js",
+            "group": 2
+        },
+        {
+            "id": "Express",
+            "group": 2
+        },
+        {
+            "id": "Python",
+            "group": 2
+        },
+        {
+            "id": "Django",
+            "group": 2
+        },
+        {
+            "id": "Java",
+            "group": 2
+        },
+        {
+            "id": "Database",
+            "group": 3
+        },
+        {
+            "id": "SQL",
+            "group": 3
+        },
+        {
+            "id": "NoSQL",
+            "group": 3
+        },
+        {
+            "id": "MongoDB",
+            "group": 3
+        },
+        {
+            "id": "PostgreSQL",
+            "group": 3
+        },
+        {
+            "id": "DevOps",
+            "group": 4
+        },
+        {
+            "id": "Docker",
+            "group": 4
+        },
+        {
+            "id": "AWS",
+            "group": 4
+        },
+        {
+            "id": "CI/CD",
+            "group": 4
+        }
+    ],
+    "links": [
+        {
+            "source": "Frontend",
+            "target": "React",
+            "value": 10
+        },
+        {
+            "source": "Frontend",
+            "target": "Angular",
+            "value": 8
+        },
+        {
+            "source": "Frontend",
+            "target": "Vue",
+            "value": 7
+        },
+        {
+            "source": "Frontend",
+            "target": "HTML",
+            "value": 12
+        },
+        {
+            "source": "Frontend",
+            "target": "CSS",
+            "value": 12
+        },
+        {
+            "source": "Frontend",
+            "target": "JavaScript",
+            "value": 15
+        },
+        {
+            "source": "React",
+            "target": "JavaScript",
+            "value": 9
+        },
+        {
+            "source": "Angular",
+            "target": "JavaScript",
+            "value": 8
+        },
+        {
+            "source": "Vue",
+            "target": "JavaScript",
+            "value": 7
+        },
+        {
+            "source": "React",
+            "target": "HTML",
+            "value": 5
+        },
+        {
+            "source": "React",
+            "target": "CSS",
+            "value": 5
+        },
+        {
+            "source": "Backend",
+            "target": "Node.js",
+            "value": 9
+        },
+        {
+            "source": "Backend",
+            "target": "Express",
+            "value": 7
+        },
+        {
+            "source": "Backend",
+            "target": "Python",
+            "value": 8
+        },
+        {
+            "source": "Backend",
+            "target": "Django",
+            "value": 6
+        },
+        {
+            "source": "Backend",
+            "target": "Java",
+            "value": 7
+        },
+        {
+            "source": "Node.js",
+            "target": "Express",
+            "value": 9
+        },
+        {
+            "source": "Python",
+            "target": "Django",
+            "value": 8
+        },
+        {
+            "source": "JavaScript",
+            "target": "Node.js",
+            "value": 8
+        },
+        {
+            "source": "Database",
+            "target": "SQL",
+            "value": 8
+        },
+        {
+            "source": "Database",
+            "target": "NoSQL",
+            "value": 7
+        },
+        {
+            "source": "SQL",
+            "target": "PostgreSQL",
+            "value": 10
+        },
+        {
+            "source": "NoSQL",
+            "target": "MongoDB",
+            "value": 10
+        },
+        {
+            "source": "DevOps",
+            "target": "Docker",
+            "value": 9
+        },
+        {
+            "source": "DevOps",
+            "target": "AWS",
+            "value": 9
+        },
+        {
+            "source": "DevOps",
+            "target": "CI/CD",
+            "value": 10
+        },
+        {
+            "source": "Frontend",
+            "target": "Backend",
+            "value": 7
+        },
+        {
+            "source": "Backend",
+            "target": "Database",
+            "value": 8
+        },
+        {
+            "source": "Backend",
+            "target": "DevOps",
+            "value": 6
+        }
+    ]
+}

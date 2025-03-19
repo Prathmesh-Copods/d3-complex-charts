@@ -1,0 +1,132 @@
+.network-graph-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      max-width: 600px;
+      color: #ccc;
+    }
+    
+    .visualization {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+      
+      svg {
+        display: block;
+        margin: 0 auto;
+        
+        .nodes {
+          circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+            transition: fill 0.2s, opacity 0.2s, stroke-width 0.2s;
+            
+            &:hover {
+              stroke-width: 2px;
+            }
+          }
+        }
+        
+        .links {
+          line {
+            transition: stroke 0.2s, stroke-width 0.2s, opacity 0.2s;
+          }
+        }
+        
+        .labels {
+          text {
+            user-select: none;
+            transition: opacity 0.2s;
+          }
+        }
+      }
+      
+      .tooltip {
+        position: fixed;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 4px;
+        pointer-events: none;
+        z-index: 100;
+        font-size: 14px;
+        max-width: 200px;
+        transition: opacity 0.15s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        border: 1px solid #666;
+        
+        strong {
+          color: #fff;
+          font-size: 15px;
+          display: block;
+          margin-bottom: 4px;
+        }
+      }
+      
+      /* Zoom Controls */
+      .zoom-controls {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        z-index: 10;
+        
+        .zoom-button {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background-color: rgba(40, 40, 40, 0.8);
+          border: 1px solid #555;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: background-color 0.2s, transform 0.1s;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          
+          &:hover {
+            background-color: rgba(60, 60, 60, 0.9);
+          }
+          
+          &:active {
+            transform: scale(0.95);
+          }
+          
+          &.zoom-reset {
+            font-size: 14px;
+          }
+          
+          &.zoom-out {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    
+    .loading, .error {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+      width: 100%;
+      font-size: 1.2rem;
+    }
+    
+    .error {
+      color: #ff6b6b;
+    }
+  }
